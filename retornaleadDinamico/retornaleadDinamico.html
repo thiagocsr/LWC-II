@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="ApexWireMethodToProperty" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template lwc:if={leads.data}>
+                <template for:each={leads.data} for:item="lead">
+                    <div key={lead.Id}>
+                        <p>Nome: {lead.Name} - CPF: {lead.CPF__c}</p>
+                        <p>Telefone: {lead. Phone} - Email: {lead.Email} - Status: {lead.Status}</p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
